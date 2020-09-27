@@ -17,7 +17,7 @@ body {
 
 /* content styling */
 
-p, ul, ol, hr {
+p, ul, ol, hr, blockquote, pre, table {
   margin-bottom: 40px;
   margin-top: 0;
 }
@@ -26,9 +26,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 10px;
   margin-top: 0;
   font-weight: 600;
-  font-family: "Work Sans Semi-Bold";
+  font-family: "Work Sans", sans-serif
 }
-
 
 h1 {
   font-size: 200%;
@@ -127,6 +126,61 @@ tr:nth-child(even) {
 
 tr:hover td {
   background-color: #4c003e;
+}
+
+code {
+  color: #ffaf02;
+  font-size: 85%;
+  border-radius: 3px;
+  padding: 1px 4px;
+  border: solid 1px #333;
+  background: #222222BB;
+}
+
+pre {
+  background: #222222BB;
+  padding: 0.5em 1em;
+  line-height: 1.15;
+}
+
+pre > code {
+  color: #EEE;
+  background: none;
+  border: none;
+}
+
+blockquote {
+  position: relative;
+  border-left: solid 4px #57007F;
+  background: #2b003f;
+  margin-left: 2em;
+  margin-right: 0;
+  padding: 0.5em 1em 0.5em 2em;
+  font-style: italic;
+  font-size: 90%;
+}
+
+blockquote:before, blockquote:after {
+  color: rgba(173, 2, 252, 0.2);
+  font-size: 300%;
+  position: absolute;
+  line-height: 0;
+}
+
+blockquote:before {
+  content: '“';
+  top: 0.5em;
+  left: 0.05em;
+}
+
+blockquote:after {
+  content: '”';
+  bottom: 0.05em;
+  right: 0.2em ;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 
