@@ -1,0 +1,197 @@
+* { box-sizing: border-box; }
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #110019;
+  color: #eedcf7;
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+body > header {
+  position: relative;
+  background: #203;
+  padding: 2vh 0;
+  text-align: center;
+  box-shadow: inset 0 -1px rgba(175, 2, 255, 0.2);
+  border-bottom: solid 2px #000;
+}
+
+#main-logo {
+  display: inline-block;
+  line-height: 0;
+}
+
+body > header #reveal-menu { display: none; }
+
+body > header #menu-toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+body > header #main-logo img {
+  height: 6vmax;
+}
+
+body > header #menu-toggle {
+  height: calc(6vmax + 4vh);
+  overflow: hidden;
+  padding: calc(2vh + 0.5vmax);
+  cursor: pointer;
+}
+
+body > header #menu-toggle svg {
+  height: 5vmax;
+  width: 5vmax;
+}
+
+body > header #menu-toggle svg path {
+  fill: #af02ff;
+}
+
+body > header #menu-toggle:hover svg path,
+body > header #menu-toggle:focus svg path {
+  fill: #ff02d0;
+}
+
+body > header ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  margin-top: 1em;
+}
+
+body > header li {
+  margin-bottom: 0.5em;
+}
+
+body > header li:last-child {
+  margin-bottom: 0;
+}
+
+body > header li a {
+  display: block;
+  padding: 0.5em 0;
+  text-decoration: none;
+  color: #af02ff;
+  font-weight: 600;
+  background: #110019;
+  border-radius: 0.25em;
+  border: solid 1px transparent;
+}
+
+body > header li a:hover, body > header li a:focus {
+  color: #ff02d0;
+  background: #190014;
+  border: solid 1px currentColor;
+}
+
+body > header nav {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0 calc(2vh + 0.5vmax);
+}
+
+body > header #reveal-menu:checked + label + nav {
+  max-height: 100%;
+  /* TODO: maybe a lil' transition between opening and closing?
+   * can't do transitions with height set to auto, scaleY is an option but
+   * looks kinda wonky. Could be ok paired with opacity.
+   * SO: https://stackoverflow.com/questions/3508605/how-can-i-transition-height-0-to-height-auto-using-css
+   */
+}
+
+section[role=document] {
+  padding: 4vmin calc(2vh + 0.5vmax);
+}
+
+/* Wide screen styles */
+/* TODO: bit of padding when you're exactly on that breakpoint */
+
+
+@media (min-width: 900px) {
+  .page-width-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  body > header .page-width-wrap {
+    line-height: 0;
+  }
+
+  section[role=document] {
+    padding: 4vmin;
+  }
+
+  body > header > .page-width-wrap {
+    text-align: left;
+    vertical-align: middle;
+    padding: 0 4vmin;
+  }
+
+  body > header {
+    padding: 1em 0;
+  }
+
+  body > header #main-logo {
+    display: inline-block;
+    line-height: 0;
+  }
+
+  body > header #main-logo img {
+    height: 2em;
+  }
+
+  body > header #reveal-menu,
+  body > header #menu-toggle {
+    display: none;
+  }
+
+  body > header nav {
+    max-height: 100%;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: top;
+    margin-top: 0.5em;
+    float: right;
+  }
+
+  body > header nav ul {
+    margin-top: 0;
+  }
+
+  body > header li,
+  body > header li a,
+  body > header li a:hover {
+    display: inline;
+    background: none;
+    border: none;
+  }
+
+  body > header li a {
+    padding: 0;
+  }
+
+  body > header li {
+    margin-bottom: 0;
+    margin-left: 2em;
+  }
+}
+
+
+@media (min-width: 940px) {
+  section[role=document] {
+    padding: 4vmin 0;
+  }
+
+  body > header .page-width-wrap {
+    padding: 0;
+  }
+}
