@@ -12,7 +12,7 @@
       <div class="page-width-wrap">
         <a id="main-logo" href="{{ .Site.BaseURL }}/"><!--
         --><img src="{{ .Site.BaseURL }}/img/reflex-dance-logo-color.svg" alt="RE:Flex Dance logo"><!--
-     --></a><!--
+     --></a>{{ if 0 }}<!--
      --><input type="checkbox" id="reveal-menu"><!--
      --><label id="menu-toggle" for="reveal-menu"><!--
        --><svg version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -24,6 +24,6 @@
       --><li><a href="/downloads">Downloads</a></li><!--
       --><li><a href="/materials">Materials</a></li><!--
       --><li><a href="/contact">Contact</a></li><!--
-    --></ul></nav><!--
+    --></ul></nav>{{ end }}<!--
     --></div>
     </header>
