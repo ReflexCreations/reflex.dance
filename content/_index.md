@@ -5,6 +5,8 @@ title = "The Open-source Dance Pad"
 
 Welcome to RE:Flex Dance, an open-source dance pad. RE:Flex Dance is designed to be a robust, high quality platform you can build out of readily available parts, with minimal tools.
 
+{{< resized_image "dance-pad.jpg" "Photo of a RE:Flex Dance Pad with LEDs showing arrows" >}}
+
 Everything you need to construct and run one of these is contained in the links below.
 
 For license details, please see [license.txt](/license.txt).
