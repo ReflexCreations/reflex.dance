@@ -19,6 +19,7 @@ For license details, please see [license.txt](/license.txt).
 - [IO firmware](https://github.com/ReflexCreations/io-firmware): Code that runs on the IO board's microcontroller, orchestrates communication between PC and panel boards
 - [Panel firmware](https://github.com/ReflexCreations/panel-firmware): Code that runs on the Panel board's microcontroller, collects sensor readings, processes and outputs data to LEDs
 - [Python interface](https://github.com/ReflexCreations/python-interface): GUI application letting you configure sensor thresholds, pick images to display on panels, monitor sensor input
+- [reflex.dance](https://github.com/ReflexCreations/reflex.dance): The very website you are looking at
 
 ## Come Chat!
 
