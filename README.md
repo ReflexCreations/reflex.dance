@@ -1,5 +1,5 @@
 # Reflex.dance
-This is the RE:Flex Dance website, as on ~[reflex.dance](https://reflex.dance)~ just [dev.reflex.dance](https://dev.reflex.dance) for now.
+This is the RE:Flex Dance website, as on [reflex.dance](https://reflex.dance).
 
 It is built using the Hugo static site generator; view the [Hugo documentation](https://gohugo.io/documentation/) for all the details.
 
@@ -10,7 +10,6 @@ Each such page lives in its own directory under `content/`. The main (homepage) 
 live in `content/build/index.md`.
 
 ### Locally writing content and seeing it on the site
-
 
 1. Download Hugo: [Hugo latest release](https://github.com/gohugoio/hugo/releases/latest)
 2. Install it
@@ -39,5 +38,5 @@ everything will look like on the site.
 ## Theme and styling
 
 The theme comprising the layout and styles of the site live in `/themes/reflex.dance/`. All the CSS for the theme is just in one file:
-`/themes/reflex.dance/static/css/styles.css` There should be appropriate styling for most of the things this site will need, but it can of course be expanded
+`/themes/reflex.dance/assets/css/styles.css` There should be appropriate styling for most of the things this site will need, but it can of course be expanded
 upon if custom markup is used.
