@@ -60,7 +60,20 @@ ul ol, ol ul, ul ul, ol ol {
 }
 
 img {
-  display: block;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.centered {
+  margin: 0 auto 40px auto;
+}
+
+.centered figure {
+  text-align: center;
 }
 
 a {
