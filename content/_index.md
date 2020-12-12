@@ -1,38 +1,19 @@
 +++
 draft = false
-title = "RE:Flex Dance v0.2"
+title = "The Open-source Dance Pad"
 +++
 
-This is the placeholder page for the home page. Edit the title in the 
-"front matter" (the bit between the `+++` in the source .md file for this page).
+Welcome to RE:Flex Dance, an open-source dance pad. RE:Flex Dance is designed to be a robust, high quality platform you can build out of readily available parts, with minimal tools.
 
-You can write a bunch of markdown here.
+Everything you need to construct and run one of these is contained in the links below.
 
----
+For license details, please see [license.txt](/license.txt).
 
-Type some stuff with `inline code`
+## GitHub Repositories
 
-> The fact that we live at the bottom of a deep gravity well, on the surface of a gas covered planet going around a nuclear fireball 90 million miles away and think this to be normal is obviously some indication of how skewed our perspective tends to be.
->
-> --- Douglas Adams
-
-
-```
-var foo = "bar";
-```
-## Heading two
-
-| Foo | Bar |
-------|------
-| hi  | hello|
-| hi  | hello|
-| hi  | hello|
-| hi  | hello|
-
-### Heading three
-
-- Foo
-- Bar
-  1. one
-  2. two
-
+- [Hardware design](https://github.com/ReflexCreations/hardware-design): Fusion 360 design of the entire framework, 3D-printable parts
+- [IO board](https://github.com/ReflexCreations/io-board): KiCad schematic and circuit board design of the IO board, which communicates with a PC and with the panel boards
+- [Panel board](https://github.com/ReflexCreations/panel-board): KiCad schematic and circuit board design of the Panel board, which reads the sensors and has a grid of 84 LEDs
+- [IO firmware](https://github.com/ReflexCreations/io-firmware): Code that runs on the IO board's microcontroller, orchestrates communication between PC and panel boards
+- [Panel firmware](https://github.com/ReflexCreations/panel-firmware): Code that runs on the Panel board's microcontroller, collects sensor readings, processes and outputs data to LEDs
+- [Python interface](https://github.com/ReflexCreations/python-interface): GUI application letting you configure sensor thresholds, pick images to display on panels, monitor sensor input
