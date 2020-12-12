@@ -1,0 +1,9 @@
+{{ $img := $.Page.Resources.GetMatch (.Get 0) }}
+{{ $resized := $img.Resize "800x 90q" }}
+<div class="centered">
+  <figure>
+    <a href="{{ $img.RelPermalink }}" title="Click for full size">
+      <img src="{{ $resized.RelPermalink }}" alt="{{ (.Get 1) }}">
+    </a>
+  </figure>
+</div>
